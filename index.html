@@ -1,0 +1,972 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Saffron & Stone — Fine dining restaurant in Banjara Hills, Hyderabad. Experience North & South Indian cuisine crafted with centuries-old recipes in an unforgettable ambience. Reserve a table today." />
+  <meta property="og:title" content="Saffron & Stone — Where Ancient Flavors Meet Modern Craft" />
+  <meta property="og:description" content="Premium Indian dining experience in the heart of Hyderabad. Reserve a table or order online." />
+  <meta property="og:image" content="images/hero.jpg" />
+  <meta property="og:type" content="website" />
+  <meta name="theme-color" content="#0D0B08" />
+  <title>Saffron &amp; Stone — Where Ancient Flavors Meet Modern Craft | Hyderabad</title>
+
+  <!-- Preconnect for Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <!-- Preload hero image -->
+  <link rel="preload" as="image" href="images/hero.jpg" />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Skip to Content -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- ═══════════════════════════════════════════════
+       NAVIGATION
+  ═══════════════════════════════════════════════ -->
+  <header>
+    <nav class="nav" id="nav" role="navigation" aria-label="Main navigation">
+      <div class="nav-inner">
+        <a href="#" class="nav-logo" aria-label="Saffron &amp; Stone - Home">Saffron &amp; Stone</a>
+
+        <ul class="nav-links" role="list">
+          <li><a href="#dishes">Menu</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <div class="nav-cta">
+          <a href="#reserve" class="btn btn-primary">Reserve a Table</a>
+        </div>
+
+        <button class="hamburger" id="hamburger" aria-label="Open navigation menu" aria-expanded="false" aria-controls="nav-overlay">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Mobile Full-Screen Nav Overlay -->
+    <div class="nav-overlay" id="nav-overlay" role="dialog" aria-modal="true" aria-label="Navigation menu">
+      <button class="nav-overlay-close" id="nav-close" aria-label="Close navigation menu">×</button>
+      <ul class="nav-overlay-links" role="list">
+        <li><a href="#dishes" class="nav-overlay-link">Menu</a></li>
+        <li><a href="#about" class="nav-overlay-link">About</a></li>
+        <li><a href="#experience" class="nav-overlay-link">Experience</a></li>
+        <li><a href="#gallery" class="nav-overlay-link">Gallery</a></li>
+        <li><a href="#contact" class="nav-overlay-link">Contact</a></li>
+      </ul>
+      <a href="#reserve" class="btn btn-primary nav-overlay-link">Reserve a Table</a>
+    </div>
+  </header>
+
+  <main id="main-content">
+
+    <!-- ═══════════════════════════════════════════════
+         SECTION 1 — HERO
+    ═══════════════════════════════════════════════ -->
+    <section class="hero" id="home" aria-label="Hero">
+      <div class="hero-bg">
+        <img src="images/hero.jpg" alt="Elegant interior of Saffron &amp; Stone restaurant with warm amber lighting and traditional décor" loading="eager" fetchpriority="high" />
+      </div>
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <p class="hero-eyebrow">Hyderabad · Est. 2012 · Fine Dining</p>
+        <h1>Saffron<br />&amp; Stone</h1>
+        <p class="hero-tagline">Where Ancient Flavors Meet Modern Craft</p>
+        <div class="hero-cta">
+          <a href="#reserve" class="btn btn-primary" id="hero-reserve-btn">Reserve a Table</a>
+          <a href="#menu" class="btn btn-secondary" id="hero-menu-btn">View Full Menu →</a>
+        </div>
+      </div>
+      <div class="hero-scroll-cue" aria-hidden="true">
+        <div class="scroll-line"></div>
+        <span class="scroll-text">Scroll</span>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════
+         SECTION 2 — BUSINESS VALUE STRIP
+    ═══════════════════════════════════════════════ -->
+    <section class="value-strip" aria-label="Quick contact options">
+      <div class="value-strip-grid">
+
+        <a href="tel:+919849155566" class="value-tile" aria-label="Call us at +91 98491 55566">
+          <div class="value-tile-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.86 13a19.79 19.79 0 01-3.07-8.67A2 2 0 012.77 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 9.91a16 16 0 006.18 6.18l1.08-1.08a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/>
+            </svg>
+          </div>
+          <div class="value-tile-text">
+            <div class="value-tile-label">Call Directly</div>
+            <div class="value-tile-sub">+91 98491 55566</div>
+          </div>
+        </a>
+
+        <a href="https://wa.me/919849155566?text=Hi%2C%20I%27d%20like%20to%20make%20a%20reservation%20at%20Saffron%20%26%20Stone." target="_blank" rel="noopener" class="value-tile" aria-label="Message us on WhatsApp">
+          <div class="value-tile-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/>
+            </svg>
+          </div>
+          <div class="value-tile-text">
+            <div class="value-tile-label">WhatsApp Us</div>
+            <div class="value-tile-sub">Chat with us instantly</div>
+          </div>
+        </a>
+
+        <a href="https://maps.google.com/?q=Banjara+Hills+Hyderabad+Telangana" target="_blank" rel="noopener" class="value-tile" aria-label="Get directions to our restaurant">
+          <div class="value-tile-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/>
+              <circle cx="12" cy="10" r="3"/>
+            </svg>
+          </div>
+          <div class="value-tile-text">
+            <div class="value-tile-label">Find Us</div>
+            <div class="value-tile-sub">Banjara Hills, Hyderabad</div>
+          </div>
+        </a>
+
+        <a href="#menu" class="value-tile" aria-label="View our full menu">
+          <div class="value-tile-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M3 11l19-9-9 19-2-8-8-2z"/>
+            </svg>
+          </div>
+          <div class="value-tile-text">
+            <div class="value-tile-label">View Menu</div>
+            <div class="value-tile-sub">Full menu with prices</div>
+          </div>
+        </a>
+
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════
+         SECTION 3 — SIGNATURE DISHES
+    ═══════════════════════════════════════════════ -->
+    <section class="dishes section-padding" id="dishes" aria-label="Signature dishes">
+      <div class="container">
+        <div class="section-header">
+          <p class="eyebrow">Signature Dishes</p>
+          <h2 class="section-title">From Our Kitchen</h2>
+          <p class="section-sub">Crafted with tradition, served with pride.</p>
+        </div>
+
+        <!-- Mobile scroll cards -->
+        <div class="dishes-scroll" role="list" aria-label="Signature dishes carousel">
+
+          <article class="dish-card reveal" role="listitem">
+            <div class="dish-card-img">
+              <img src="images/dish-biryani.jpg" alt="Saffron Dum Biryani served in a silver handi" loading="lazy" />
+              <span class="dish-badge">Chef's Pick</span>
+            </div>
+            <div class="dish-card-body">
+              <div class="dish-name">
+                <span class="dish-veg-indicator non-veg" title="Non-vegetarian"></span>
+                Saffron Dum Biryani
+              </div>
+              <p class="dish-desc">Slow-cooked basmati rice with tender meat, saffron threads, caramelized onions &amp; rose water</p>
+              <div class="dish-price">₹ 680</div>
+            </div>
+          </article>
+
+          <article class="dish-card reveal" role="listitem">
+            <div class="dish-card-img">
+              <img src="images/dish-paneer-tikka.jpg" alt="Paneer Tikka plated on a slate board" loading="lazy" />
+              <span class="dish-badge">Must Try</span>
+            </div>
+            <div class="dish-card-body">
+              <div class="dish-name">
+                <span class="dish-veg-indicator veg" title="Vegetarian"></span>
+                Paneer Tikka Royale
+              </div>
+              <p class="dish-desc">Handmade cottage cheese in a saffron marinade, grilled in our clay tandoor &amp; served with mint chutney</p>
+              <div class="dish-price">₹ 420</div>
+            </div>
+          </article>
+
+          <article class="dish-card reveal" role="listitem">
+            <div class="dish-card-img">
+              <img src="images/dish-dal-makhani.jpg" alt="Dal Makhani in a black stone bowl" loading="lazy" />
+            </div>
+            <div class="dish-card-body">
+              <div class="dish-name">
+                <span class="dish-veg-indicator veg" title="Vegetarian"></span>
+                Dal Makhani
+              </div>
+              <p class="dish-desc">Black lentils slow-simmered overnight with butter, cream &amp; whole spices — our most beloved recipe</p>
+              <div class="dish-price">₹ 320</div>
+            </div>
+          </article>
+
+          <article class="dish-card reveal" role="listitem">
+            <div class="dish-card-img">
+              <img src="images/dish-butter-chicken.jpg" alt="Butter Chicken in a copper karahi" loading="lazy" />
+              <span class="dish-badge">Bestseller</span>
+            </div>
+            <div class="dish-card-body">
+              <div class="dish-name">
+                <span class="dish-veg-indicator non-veg" title="Non-vegetarian"></span>
+                Stone-Butter Chicken
+              </div>
+              <p class="dish-desc">Succulent tandoor-smoked chicken in a velvety tomato cream sauce with aromatic spices &amp; fresh herbs</p>
+              <div class="dish-price">₹ 480</div>
+            </div>
+          </article>
+
+          <article class="dish-card reveal" role="listitem">
+            <div class="dish-card-img">
+              <img src="images/dish-rogan-josh.jpg" alt="Rogan Josh lamb curry in a terracotta bowl" loading="lazy" />
+            </div>
+            <div class="dish-card-body">
+              <div class="dish-name">
+                <span class="dish-veg-indicator non-veg" title="Non-vegetarian"></span>
+                Kashmiri Rogan Josh
+              </div>
+              <p class="dish-desc">Heritage lamb curry in a rich red gravy of whole spices, Kashmiri chillies &amp; slow-rendered aromatics</p>
+              <div class="dish-price">₹ 580</div>
+            </div>
+          </article>
+
+          <article class="dish-card reveal" role="listitem">
+            <div class="dish-card-img">
+              <img src="images/dish-gulab-jamun.jpg" alt="Gulab Jamun with saffron syrup and gold leaf" loading="lazy" />
+            </div>
+            <div class="dish-card-body">
+              <div class="dish-name">
+                <span class="dish-veg-indicator veg" title="Vegetarian"></span>
+                Gold Leaf Gulab Jamun
+              </div>
+              <p class="dish-desc">Khoya rounds in rose-saffron syrup, topped with edible gold leaf &amp; crushed pistachios</p>
+              <div class="dish-price">₹ 260</div>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- Desktop grid (same cards, duplicated for clean CSS split) -->
+        <div class="dishes-grid" aria-label="Signature dishes grid">
+
+          <article class="dish-card reveal">
+            <div class="dish-card-img">
+              <img src="images/dish-biryani.jpg" alt="Saffron Dum Biryani served in a silver handi" loading="lazy" />
+              <span class="dish-badge">Chef's Pick</span>
+            </div>
+            <div class="dish-card-body">
+              <div class="dish-name">
+                <span class="dish-veg-indicator non-veg" title="Non-vegetarian"></span>
+                Saffron Dum Biryani
+              </div>
+              <p class="dish-desc">Slow-cooked basmati rice with tender meat, saffron threads, caramelized onions &amp; rose water</p>
+              <div class="dish-price">₹ 680</div>
+            </div>
+          </article>
+
+          <article class="dish-card reveal">
+            <div class="dish-card-img">
+              <img src="images/dish-paneer-tikka.jpg" alt="Paneer Tikka plated on a slate board" loading="lazy" />
+              <span class="dish-badge">Must Try</span>
+            </div>
+            <div class="dish-card-body">
+              <div class="dish-name">
+                <span class="dish-veg-indicator veg" title="Vegetarian"></span>
+                Paneer Tikka Royale
+              </div>
+              <p class="dish-desc">Handmade cottage cheese in a saffron marinade, grilled in our clay tandoor &amp; served with mint chutney</p>
+              <div class="dish-price">₹ 420</div>
+            </div>
+          </article>
+
+          <article class="dish-card reveal">
+            <div class="dish-card-img">
+              <img src="images/dish-dal-makhani.jpg" alt="Dal Makhani in a black stone bowl" loading="lazy" />
+            </div>
+            <div class="dish-card-body">
+              <div class="dish-name">
+                <span class="dish-veg-indicator veg" title="Vegetarian"></span>
+                Dal Makhani
+              </div>
+              <p class="dish-desc">Black lentils slow-simmered overnight with butter, cream &amp; whole spices — our most beloved recipe</p>
+              <div class="dish-price">₹ 320</div>
+            </div>
+          </article>
+
+          <article class="dish-card reveal">
+            <div class="dish-card-img">
+              <img src="images/dish-butter-chicken.jpg" alt="Butter Chicken in a copper karahi" loading="lazy" />
+              <span class="dish-badge">Bestseller</span>
+            </div>
+            <div class="dish-card-body">
+              <div class="dish-name">
+                <span class="dish-veg-indicator non-veg" title="Non-vegetarian"></span>
+                Stone-Butter Chicken
+              </div>
+              <p class="dish-desc">Succulent tandoor-smoked chicken in a velvety tomato cream sauce with aromatic spices &amp; fresh herbs</p>
+              <div class="dish-price">₹ 480</div>
+            </div>
+          </article>
+
+          <article class="dish-card reveal">
+            <div class="dish-card-img">
+              <img src="images/dish-rogan-josh.jpg" alt="Rogan Josh lamb curry in a terracotta bowl" loading="lazy" />
+            </div>
+            <div class="dish-card-body">
+              <div class="dish-name">
+                <span class="dish-veg-indicator non-veg" title="Non-vegetarian"></span>
+                Kashmiri Rogan Josh
+              </div>
+              <p class="dish-desc">Heritage lamb curry in a rich red gravy of whole spices, Kashmiri chillies &amp; slow-rendered aromatics</p>
+              <div class="dish-price">₹ 580</div>
+            </div>
+          </article>
+
+          <article class="dish-card reveal">
+            <div class="dish-card-img">
+              <img src="images/dish-gulab-jamun.jpg" alt="Gulab Jamun with saffron syrup and gold leaf" loading="lazy" />
+            </div>
+            <div class="dish-card-body">
+              <div class="dish-name">
+                <span class="dish-veg-indicator veg" title="Vegetarian"></span>
+                Gold Leaf Gulab Jamun
+              </div>
+              <p class="dish-desc">Khoya rounds in rose-saffron syrup, topped with edible gold leaf &amp; crushed pistachios</p>
+              <div class="dish-price">₹ 260</div>
+            </div>
+          </article>
+
+        </div>
+
+        <div class="dishes-footer reveal">
+          <a href="#menu">Explore Our Full Menu →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════
+         SECTION 4 — BRAND STORY
+    ═══════════════════════════════════════════════ -->
+    <section class="story section-padding" id="about" aria-label="Our story">
+      <div class="container">
+        <div class="story-grid">
+          <div class="story-text">
+            <p class="eyebrow reveal">Our Story</p>
+            <h2 class="story-headline reveal">Fourteen Years of Flavor, Family &amp; Fire</h2>
+            <div class="story-body">
+              <p class="reveal">Saffron &amp; Stone was born in 2012 from a single, deeply held belief — that great Indian food deserves to be presented with the same reverence it's prepared with. Founded by the Mehta family on the quiet lanes of Banjara Hills, what began as an intimate 30-seat dining room has grown into one of Hyderabad's most beloved culinary destinations.</p>
+              <p class="reveal">Every dish on our menu traces its lineage to a specific place and time — the dum biryani to the royal kitchens of Hyderabad, the rogan josh to the valleys of Kashmir, the dal makhani to a recipe handwritten by our grandmother in 1967. We source our saffron from Iran, our spices directly from Kochi, and our dairy from a single farm in Chittoor.</p>
+              <p class="reveal">When you dine with us, you are not simply having a meal. You are entering a relationship built on decades of craft, hospitality, and an unwavering commitment to making every guest feel like family. That is the promise of Saffron &amp; Stone — and it begins the moment you walk through our doors.</p>
+            </div>
+            <blockquote class="story-quote reveal">
+              "Every plate carries the memory of someone's home."
+            </blockquote>
+          </div>
+          <div class="story-image reveal">
+            <img src="images/story.jpg" alt="Master chef artfully plating a signature dish in the Saffron &amp; Stone kitchen" loading="lazy" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════
+         SECTION 5 — EXPERIENCE / AMBIENCE
+    ═══════════════════════════════════════════════ -->
+    <section class="experience section-padding" id="experience" aria-label="Restaurant ambience">
+      <div class="container">
+        <p class="experience-headline reveal">Step Inside</p>
+        <p class="experience-sub reveal">A space designed for unforgettable moments.</p>
+
+        <!-- Mobile: vertical stack -->
+        <div class="ambience-grid-mobile">
+          <div class="ambience-img reveal">
+            <img src="images/ambience-dining.jpg" alt="Main dining room with warm amber pendant lights" loading="lazy" />
+            <div class="ambience-caption">Main Dining Hall</div>
+          </div>
+          <div class="ambience-img reveal">
+            <img src="images/ambience-private.jpg" alt="Intimate private dining room" loading="lazy" />
+            <div class="ambience-caption">Private Dining</div>
+          </div>
+          <div class="ambience-img reveal">
+            <img src="images/ambience-garden.jpg" alt="Romantic garden seating area at dusk" loading="lazy" />
+            <div class="ambience-caption">Garden Seating</div>
+          </div>
+          <div class="ambience-img reveal">
+            <img src="images/ambience-kitchen.jpg" alt="Open kitchen with glowing tandoor" loading="lazy" />
+            <div class="ambience-caption">Open Kitchen</div>
+          </div>
+        </div>
+
+        <!-- Desktop: asymmetric grid -->
+        <div class="ambience-grid-desktop">
+          <div class="ambience-row-1">
+            <div class="ambience-img reveal">
+              <img src="images/ambience-dining.jpg" alt="Main dining room with warm amber pendant lights" loading="lazy" />
+              <div class="ambience-caption">Main Dining Hall</div>
+            </div>
+            <div class="ambience-img reveal">
+              <img src="images/ambience-private.jpg" alt="Intimate private dining room" loading="lazy" />
+              <div class="ambience-caption">Private Dining</div>
+            </div>
+          </div>
+          <div class="ambience-row-2">
+            <div class="ambience-img reveal">
+              <img src="images/ambience-garden.jpg" alt="Romantic garden seating area at dusk" loading="lazy" />
+              <div class="ambience-caption">Garden Seating</div>
+            </div>
+            <div class="ambience-img reveal">
+              <img src="images/ambience-kitchen.jpg" alt="Open kitchen with glowing tandoor" loading="lazy" />
+              <div class="ambience-caption">Open Kitchen</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════
+         SECTION 6 — MENU PREVIEW
+    ═══════════════════════════════════════════════ -->
+    <section class="menu-section section-padding" id="menu" aria-label="Menu preview">
+      <div class="container">
+        <div class="section-header">
+          <p class="eyebrow">Our Menu</p>
+          <h2 class="section-title">A Menu Worth Savoring</h2>
+          <p class="section-sub">Fresh ingredients. Time-honored recipes. Served with love.</p>
+        </div>
+
+        <!-- Desktop Tabs -->
+        <div class="menu-tabs" role="tablist" aria-label="Menu categories">
+          <button class="menu-tab active" role="tab" aria-selected="true" aria-controls="panel-starters" id="tab-starters">Starters</button>
+          <button class="menu-tab" role="tab" aria-selected="false" aria-controls="panel-mains" id="tab-mains">Mains</button>
+          <button class="menu-tab" role="tab" aria-selected="false" aria-controls="panel-biryani" id="tab-biryani">Biryani</button>
+          <button class="menu-tab" role="tab" aria-selected="false" aria-controls="panel-breads" id="tab-breads">Breads</button>
+          <button class="menu-tab" role="tab" aria-selected="false" aria-controls="panel-desserts" id="tab-desserts">Desserts</button>
+          <button class="menu-tab" role="tab" aria-selected="false" aria-controls="panel-drinks" id="tab-drinks">Drinks</button>
+        </div>
+
+        <div id="panel-starters" class="menu-panel active" role="tabpanel" aria-labelledby="tab-starters">
+          <div class="menu-item reveal"><div class="menu-item-left"><div class="menu-item-name"><span class="dish-veg-indicator veg"></span>Paneer Tikka Royale</div><div class="menu-item-desc">Saffron-marinated cottage cheese, clay tandoor, mint &amp; coriander chutney</div></div><div class="menu-item-price">₹ 420</div></div>
+          <div class="menu-item reveal"><div class="menu-item-left"><div class="menu-item-name"><span class="dish-veg-indicator non-veg"></span>Seekh Kebab</div><div class="menu-item-desc">Spiced minced lamb on skewers, smoked over charcoal, served with roomali roti</div></div><div class="menu-item-price">₹ 480</div></div>
+          <div class="menu-item reveal"><div class="menu-item-left"><div class="menu-item-name"><span class="dish-veg-indicator veg"></span>Hara Bhara Kebab</div><div class="menu-item-desc">Spinach, peas &amp; potato patties with cumin &amp; green chillies, pan-seared crisp</div></div><div class="menu-item-price">₹ 280</div></div>
+          <div class="menu-item reveal"><div class="menu-item-left"><div class="menu-item-name"><span class="dish-veg-indicator non-veg"></span>Chicken 65</div><div class="menu-item-desc">Hyderabadi-style deep-fried chicken with curry leaves, green chillies &amp; curd marinade</div></div><div class="menu-item-price">₹ 360</div></div>
+          <div class="menu-item reveal"><div class="menu-item-left"><div class="menu-item-name"><span class="dish-veg-indicator veg"></span>Dahi Puri</div><div class="menu-item-desc">Crisp hollow puris with spiced chickpeas, sweet yogurt, tamarind &amp; fresh coriander</div></div><div class="menu-item-price">₹ 180</div></div>
+        </div>
+
+        <div id="panel-mains" class="menu-panel" role="tabpanel" aria-labelledby="tab-mains">
+          <div class="menu-item reveal"><div class="menu-item-left"><div class="menu-item-name"><span class="dish-veg-indicator non-veg"></span>Stone-Butter Chicken</div><div class="menu-item-desc">Tandoor-smoked chicken in velvety tomato cream, ginger &amp; aromatic spices</div></div><div class="menu-item-price">₹ 480</div></div>
+          <div class="menu-item reveal"><div class="menu-item-left"><div class="menu-item-name"><span class="dish-veg-indicator non-veg"></span>Kashmiri Rogan Josh</div><div class="menu-item-desc">Slow-braised lamb in a heritage red gravy of Kashmiri chillies &amp; whole spices</div></div><div class="menu-item-price">₹ 580</div></div>
+          <div class="menu-item reveal"><div class="menu-item-left"><div class="menu-item-name"><span class="dish-veg-indicator veg"></span>Dal Makhani</div><div class="menu-item-desc">Overnight slow-cooked black lentils with cream, butter &amp; grandmother's spice blend</div></div><div class="menu-item-price">₹ 320</div></div>
+          <div class="menu-item reveal"><div class="menu-item-left"><div class="menu-item-name"><span class="dish-veg-indicator veg"></span>Palak Paneer</div><div class="menu-item-desc">Fresh spinach purée with house-made cottage cheese, garlic &amp; cream</div></div><div class="menu-item-price">₹ 340</div></div>
+          <div class="menu-item reveal"><div class="menu-item-left"><div class="menu-item-name"><span class="dish-veg-indicator non-veg"></span>Prawn Masala</div><div class="menu-item-desc">Tiger prawns in a coastal spiced tomato gravy with coconut &amp; curry leaves</div></div><div class="menu-item-price">₹ 640</div></div>
+        </div>
+
+        <div id="panel-biryani" class="menu-panel" role="tabpanel" aria-labelledby="tab-biryani">
+          <div class="menu-item reveal"><div class="menu-item-left"><div class="menu-item-name"><span class="dish-veg-indicator non-veg"></span>Saffron Dum Biryani</div><div class="menu-item-desc">Slow-sealed dum-cooked basmati with tender meat, saffron, rose water &amp; fried onions</div></div><div class="menu-item-price">₹ 680</div></div>
+          <div class="menu-item reveal"><div class="menu-item-left"><div class="menu-item-name"><span class="dish-veg-indicator veg"></span>Vegetable Dum Biryani</div><div class="menu-item-desc">Seasonal vegetables, saffron basmati &amp; signature dum spices, topped with caramelized onions</div></div><div class="menu-item-price">₹ 420</div></div>
+          <div class="menu-item reveal"><div class="menu-item-left"><div class="menu-item-name"><span class="dish-veg-indicator non-veg"></span>Prawn Biryani</div><div class="menu-item-desc">Coastal-style biryani with tiger prawns, coconut milk &amp; southern spice blend</div></div><div class="menu-item-price">₹ 780</div></div>
+          <div class="menu-item reveal"><div class="menu-item-left"><div class="menu-item-name"><span class="dish-veg-indicator non-veg"></span>Egg Biryani</div><div class="menu-item-desc">Heritage Hyderabadi biryani with slow-cooked eggs, whole spices &amp; crispy onion garnish</div></div><div class="menu-item-price">₹ 380</div></div>
+        </div>
+
+        <div id="panel-breads" class="menu-panel" role="tabpanel" aria-labelledby="tab-breads">
+          <div class="menu-item reveal"><div class="menu-item-left"><div class="menu-item-name"><span class="dish-veg-indicator veg"></span>Butter Naan</div><div class="menu-item-desc">Tandoor-baked leavened flatbread brushed with cultured butter &amp; nigella seeds</div></div><div class="menu-item-price">₹ 60</div></div>
+          <div class="menu-item reveal"><div class="menu-item-left"><div class="menu-item-name"><span class="dish-veg-indicator veg"></span>Garlic &amp; Herb Naan</div><div class="menu-item-desc">Tandoor naan with roasted garlic, fresh coriander &amp; clarified butter</div></div><div class="menu-item-price">₹ 80</div></div>
+          <div class="menu-item reveal"><div class="menu-item-left"><div class="menu-item-name"><span class="dish-veg-indicator veg"></span>Sheermal</div><div class="menu-item-desc">Saffron-scented sweet flatbread — a Hyderabadi royal kitchen classic</div></div><div class="menu-item-price">₹ 90</div></div>
+          <div class="menu-item reveal"><div class="menu-item-left"><div class="menu-item-name"><span class="dish-veg-indicator veg"></span>Roomali Roti</div><div class="menu-item-desc">Paper-thin handkerchief bread, softer than silk — the perfect companion to gravies</div></div><div class="menu-item-price">₹ 55</div></div>
+          <div class="menu-item reveal"><div class="menu-item-left"><div class="menu-item-name"><span class="dish-veg-indicator veg"></span>Tandoori Paratha</div><div class="menu-item-desc">Multi-layered whole wheat bread with ghee, cooked fresh in the tandoor</div></div><div class="menu-item-price">₹ 70</div></div>
+        </div>
+
+        <div id="panel-desserts" class="menu-panel" role="tabpanel" aria-labelledby="tab-desserts">
+          <div class="menu-item reveal"><div class="menu-item-left"><div class="menu-item-name"><span class="dish-veg-indicator veg"></span>Gold Leaf Gulab Jamun</div><div class="menu-item-desc">Khoya rounds in rose-saffron syrup, edible gold leaf &amp; crushed pistachios</div></div><div class="menu-item-price">₹ 260</div></div>
+          <div class="menu-item reveal"><div class="menu-item-left"><div class="menu-item-name"><span class="dish-veg-indicator veg"></span>Double Ka Meetha</div><div class="menu-item-desc">Hyderabadi bread pudding with thickened milk, saffron, dry fruits &amp; rose essence</div></div><div class="menu-item-price">₹ 220</div></div>
+          <div class="menu-item reveal"><div class="menu-item-left"><div class="menu-item-name"><span class="dish-veg-indicator veg"></span>Phirni</div><div class="menu-item-desc">Rose-scented ground rice pudding, chilled in terracotta, garnished with silver varq</div></div><div class="menu-item-price">₹ 180</div></div>
+          <div class="menu-item reveal"><div class="menu-item-left"><div class="menu-item-name"><span class="dish-veg-indicator veg"></span>Rasmalai</div><div class="menu-item-desc">Soft cottage cheese rounds in reduced saffron milk with cardamom &amp; pistachios</div></div><div class="menu-item-price">₹ 200</div></div>
+        </div>
+
+        <div id="panel-drinks" class="menu-panel" role="tabpanel" aria-labelledby="tab-drinks">
+          <div class="menu-item reveal"><div class="menu-item-left"><div class="menu-item-name"><span class="dish-veg-indicator veg"></span>Saffron Lassi</div><div class="menu-item-desc">Chilled creamy yogurt drink with saffron, cardamom &amp; rose water, topped with malai</div></div><div class="menu-item-price">₹ 160</div></div>
+          <div class="menu-item reveal"><div class="menu-item-left"><div class="menu-item-name"><span class="dish-veg-indicator veg"></span>Masala Chai</div><div class="menu-item-desc">Slow-brewed tea with cinnamon, cardamom, ginger &amp; cloves — served in a kullad</div></div><div class="menu-item-price">₹ 80</div></div>
+          <div class="menu-item reveal"><div class="menu-item-left"><div class="menu-item-name"><span class="dish-veg-indicator veg"></span>Rose Sharbat</div><div class="menu-item-desc">Chilled traditional rose syrup with vetiver &amp; lemon, topped with basil seeds</div></div><div class="menu-item-price">₹ 120</div></div>
+          <div class="menu-item reveal"><div class="menu-item-left"><div class="menu-item-name"><span class="dish-veg-indicator veg"></span>Fresh Lime Soda</div><div class="menu-item-desc">Sparkling soda with house-squeezed lime, black salt &amp; cumin — sweet or salted</div></div><div class="menu-item-price">₹ 90</div></div>
+          <div class="menu-item reveal"><div class="menu-item-left"><div class="menu-item-name"><span class="dish-veg-indicator veg"></span>Thandai</div><div class="menu-item-desc">Chilled milk blended with almonds, fennel, saffron &amp; mixed seeds — a festive classic</div></div><div class="menu-item-price">₹ 140</div></div>
+        </div>
+
+        <!-- Mobile Accordion -->
+        <div class="menu-accordion" id="menu-accordion">
+
+          <div class="accordion-item open">
+            <button class="accordion-header" aria-expanded="true">
+              Starters <span class="accordion-icon">+</span>
+            </button>
+            <div class="accordion-body">
+              <div class="accordion-content">
+                <div class="menu-item"><div class="menu-item-left"><div class="menu-item-name"><span class="dish-veg-indicator veg"></span>Paneer Tikka Royale</div><div class="menu-item-desc">Saffron-marinated cottage cheese, clay tandoor, mint chutney</div></div><div class="menu-item-price">₹ 420</div></div>
+                <div class="menu-item"><div class="menu-item-left"><div class="menu-item-name"><span class="dish-veg-indicator non-veg"></span>Seekh Kebab</div><div class="menu-item-desc">Spiced minced lamb on skewers, smoked over charcoal</div></div><div class="menu-item-price">₹ 480</div></div>
+                <div class="menu-item"><div class="menu-item-left"><div class="menu-item-name"><span class="dish-veg-indicator veg"></span>Hara Bhara Kebab</div><div class="menu-item-desc">Spinach, peas &amp; potato patties, pan-seared crisp</div></div><div class="menu-item-price">₹ 280</div></div>
+                <div class="menu-item"><div class="menu-item-left"><div class="menu-item-name"><span class="dish-veg-indicator non-veg"></span>Chicken 65</div><div class="menu-item-desc">Hyderabadi-style fried chicken with curry leaves</div></div><div class="menu-item-price">₹ 360</div></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button class="accordion-header" aria-expanded="false">
+              Mains <span class="accordion-icon">+</span>
+            </button>
+            <div class="accordion-body">
+              <div class="accordion-content">
+                <div class="menu-item"><div class="menu-item-left"><div class="menu-item-name"><span class="dish-veg-indicator non-veg"></span>Stone-Butter Chicken</div><div class="menu-item-desc">Tandoor-smoked chicken in velvety tomato cream</div></div><div class="menu-item-price">₹ 480</div></div>
+                <div class="menu-item"><div class="menu-item-left"><div class="menu-item-name"><span class="dish-veg-indicator non-veg"></span>Kashmiri Rogan Josh</div><div class="menu-item-desc">Slow-braised lamb in a heritage red gravy</div></div><div class="menu-item-price">₹ 580</div></div>
+                <div class="menu-item"><div class="menu-item-left"><div class="menu-item-name"><span class="dish-veg-indicator veg"></span>Dal Makhani</div><div class="menu-item-desc">Overnight slow-cooked black lentils with cream &amp; butter</div></div><div class="menu-item-price">₹ 320</div></div>
+                <div class="menu-item"><div class="menu-item-left"><div class="menu-item-name"><span class="dish-veg-indicator veg"></span>Palak Paneer</div><div class="menu-item-desc">Fresh spinach purée with house-made cottage cheese</div></div><div class="menu-item-price">₹ 340</div></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button class="accordion-header" aria-expanded="false">
+              Biryani <span class="accordion-icon">+</span>
+            </button>
+            <div class="accordion-body">
+              <div class="accordion-content">
+                <div class="menu-item"><div class="menu-item-left"><div class="menu-item-name"><span class="dish-veg-indicator non-veg"></span>Saffron Dum Biryani</div><div class="menu-item-desc">Slow-sealed dum-cooked basmati with tender meat</div></div><div class="menu-item-price">₹ 680</div></div>
+                <div class="menu-item"><div class="menu-item-left"><div class="menu-item-name"><span class="dish-veg-indicator veg"></span>Vegetable Dum Biryani</div><div class="menu-item-desc">Seasonal vegetables, saffron basmati &amp; signature spices</div></div><div class="menu-item-price">₹ 420</div></div>
+                <div class="menu-item"><div class="menu-item-left"><div class="menu-item-name"><span class="dish-veg-indicator non-veg"></span>Prawn Biryani</div><div class="menu-item-desc">Coastal-style with tiger prawns &amp; coconut milk</div></div><div class="menu-item-price">₹ 780</div></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button class="accordion-header" aria-expanded="false">
+              Desserts <span class="accordion-icon">+</span>
+            </button>
+            <div class="accordion-body">
+              <div class="accordion-content">
+                <div class="menu-item"><div class="menu-item-left"><div class="menu-item-name"><span class="dish-veg-indicator veg"></span>Gold Leaf Gulab Jamun</div><div class="menu-item-desc">Rose-saffron syrup, edible gold leaf, crushed pistachios</div></div><div class="menu-item-price">₹ 260</div></div>
+                <div class="menu-item"><div class="menu-item-left"><div class="menu-item-name"><span class="dish-veg-indicator veg"></span>Double Ka Meetha</div><div class="menu-item-desc">Hyderabadi bread pudding with saffron &amp; dry fruits</div></div><div class="menu-item-price">₹ 220</div></div>
+                <div class="menu-item"><div class="menu-item-left"><div class="menu-item-name"><span class="dish-veg-indicator veg"></span>Phirni</div><div class="menu-item-desc">Rose-scented rice pudding in terracotta, silver varq</div></div><div class="menu-item-price">₹ 180</div></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button class="accordion-header" aria-expanded="false">
+              Drinks <span class="accordion-icon">+</span>
+            </button>
+            <div class="accordion-body">
+              <div class="accordion-content">
+                <div class="menu-item"><div class="menu-item-left"><div class="menu-item-name"><span class="dish-veg-indicator veg"></span>Saffron Lassi</div><div class="menu-item-desc">Chilled yogurt with saffron, cardamom &amp; rose water</div></div><div class="menu-item-price">₹ 160</div></div>
+                <div class="menu-item"><div class="menu-item-left"><div class="menu-item-name"><span class="dish-veg-indicator veg"></span>Masala Chai</div><div class="menu-item-desc">Slow-brewed spiced tea served in a kullad</div></div><div class="menu-item-price">₹ 80</div></div>
+                <div class="menu-item"><div class="menu-item-left"><div class="menu-item-name"><span class="dish-veg-indicator veg"></span>Rose Sharbat</div><div class="menu-item-desc">Traditional rose syrup with vetiver &amp; basil seeds</div></div><div class="menu-item-price">₹ 120</div></div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="menu-footer reveal">
+          <a href="#reserve" class="btn btn-outline-gold">View the Complete Menu</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════
+         SECTION 7 — RESERVATION / CTA
+    ═══════════════════════════════════════════════ -->
+    <section class="reservation section-padding" id="reserve" aria-label="Make a reservation">
+      <div class="reservation-bg">
+        <img src="images/cta-bg.jpg" alt="" role="presentation" loading="lazy" />
+      </div>
+      <div class="container">
+        <div class="reservation-content">
+          <p class="eyebrow" style="justify-content:center;">Ready to Visit?</p>
+          <h2 class="reservation-headline reveal">Join Us for an Unforgettable Meal</h2>
+          <p class="reservation-sub reveal">Book a table, order online, or simply stop by. We are always ready for you.</p>
+          <div class="reservation-btns reveal">
+            <a href="tel:+919849155566" class="btn btn-primary" id="cta-reserve-btn">Reserve a Table</a>
+            <a href="https://wa.me/919849155566?text=Hi%2C%20I%27d%20like%20to%20make%20a%20reservation%20at%20Saffron%20%26%20Stone." target="_blank" rel="noopener" class="btn btn-whatsapp" id="cta-whatsapp-btn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+              Message on WhatsApp
+            </a>
+            <a href="tel:+919849155566" class="btn btn-secondary" id="cta-call-btn">Call: +91 98491 55566</a>
+          </div>
+          <div class="reservation-info">
+            <div class="reservation-hours">Open Daily · 11:00 AM – 11:00 PM</div>
+            <a href="https://maps.google.com/?q=Banjara+Hills+Hyderabad+Telangana" target="_blank" rel="noopener" class="reservation-address">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              42, Heritage Road, Banjara Hills, Hyderabad
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════
+         SECTION 8 — REVIEWS
+    ═══════════════════════════════════════════════ -->
+    <section class="reviews section-padding" id="reviews" aria-label="Guest reviews">
+      <div class="container">
+        <div class="section-header">
+          <p class="eyebrow">What Our Guests Say</p>
+          <div class="reviews-stars" aria-label="5 out of 5 stars">★★★★★</div>
+          <h2 class="reviews-headline">4.8 Stars · 340+ Happy Guests</h2>
+          <p class="reviews-sub">Rated on Google by people who love great food.</p>
+        </div>
+
+        <!-- Mobile scroll -->
+        <div class="reviews-scroll" role="list" aria-label="Guest reviews carousel">
+
+          <article class="review-card reveal" role="listitem">
+            <span class="review-quote-mark" aria-hidden="true">"</span>
+            <p class="review-text">Absolutely extraordinary. The biryani alone was worth the trip from Mumbai. Every grain of rice held a story — saffron, rose water, the ghost of slow fire. I've dined at Taj properties, but Saffron &amp; Stone has a soul you can taste.</p>
+            <div class="review-divider"></div>
+            <div class="reviewer-row">
+              <div class="reviewer-avatar" aria-hidden="true">AR</div>
+              <div class="reviewer-info">
+                <div class="reviewer-name">Arjun Rao</div>
+                <div class="reviewer-stars" aria-label="5 stars">★★★★★</div>
+                <div class="reviewer-meta">
+                  <span class="google-badge">
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/></svg>
+                    Verified Google Review
+                  </span>
+                  <span class="review-date">· March 2026</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="review-card reveal" role="listitem">
+            <span class="review-quote-mark" aria-hidden="true">"</span>
+            <p class="review-text">We celebrated our 10th anniversary here and it was perfect in every way. The private dining room is stunning, the service was warm and unhurried, and the Dal Makhani tasted like it had been cooking since morning. Which I believe it had.</p>
+            <div class="review-divider"></div>
+            <div class="reviewer-row">
+              <div class="reviewer-avatar" aria-hidden="true">PS</div>
+              <div class="reviewer-info">
+                <div class="reviewer-name">Priya Sharma</div>
+                <div class="reviewer-stars" aria-label="5 stars">★★★★★</div>
+                <div class="reviewer-meta">
+                  <span class="google-badge">
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/></svg>
+                    Verified Google Review
+                  </span>
+                  <span class="review-date">· April 2026</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="review-card reveal" role="listitem">
+            <span class="review-quote-mark" aria-hidden="true">"</span>
+            <p class="review-text">As a chef myself, I rarely get impressed by restaurant food. This place impressed me. The Rogan Josh had depth — slow, unhurried, genuinely complex. The Gulab Jamun was a lesson in restraint. One of the top 5 restaurants I've visited in India this year.</p>
+            <div class="review-divider"></div>
+            <div class="reviewer-row">
+              <div class="reviewer-avatar" aria-hidden="true">MK</div>
+              <div class="reviewer-info">
+                <div class="reviewer-name">Mohammed Khalid</div>
+                <div class="reviewer-stars" aria-label="5 stars">★★★★★</div>
+                <div class="reviewer-meta">
+                  <span class="google-badge">
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/></svg>
+                    Verified Google Review
+                  </span>
+                  <span class="review-date">· May 2026</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- Desktop grid -->
+        <div class="reviews-grid" aria-label="Guest reviews grid">
+
+          <article class="review-card reveal">
+            <span class="review-quote-mark" aria-hidden="true">"</span>
+            <p class="review-text">Absolutely extraordinary. The biryani alone was worth the trip from Mumbai. Every grain of rice held a story — saffron, rose water, the ghost of slow fire. I've dined at Taj properties, but Saffron &amp; Stone has a soul you can taste.</p>
+            <div class="review-divider"></div>
+            <div class="reviewer-row">
+              <div class="reviewer-avatar" aria-hidden="true">AR</div>
+              <div class="reviewer-info">
+                <div class="reviewer-name">Arjun Rao</div>
+                <div class="reviewer-stars" aria-label="5 stars">★★★★★</div>
+                <div class="reviewer-meta">
+                  <span class="google-badge">
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/></svg>
+                    Verified Google Review
+                  </span>
+                  <span class="review-date">· March 2026</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="review-card reveal">
+            <span class="review-quote-mark" aria-hidden="true">"</span>
+            <p class="review-text">We celebrated our 10th anniversary here and it was perfect in every way. The private dining room is stunning, the service was warm and unhurried, and the Dal Makhani tasted like it had been cooking since morning. Which I believe it had.</p>
+            <div class="review-divider"></div>
+            <div class="reviewer-row">
+              <div class="reviewer-avatar" aria-hidden="true">PS</div>
+              <div class="reviewer-info">
+                <div class="reviewer-name">Priya Sharma</div>
+                <div class="reviewer-stars" aria-label="5 stars">★★★★★</div>
+                <div class="reviewer-meta">
+                  <span class="google-badge">
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/></svg>
+                    Verified Google Review
+                  </span>
+                  <span class="review-date">· April 2026</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="review-card reveal">
+            <span class="review-quote-mark" aria-hidden="true">"</span>
+            <p class="review-text">As a chef myself, I rarely get impressed by restaurant food. This place impressed me. The Rogan Josh had depth — slow, unhurried, genuinely complex. The Gulab Jamun was a lesson in restraint. One of the top 5 restaurants I've visited in India this year.</p>
+            <div class="review-divider"></div>
+            <div class="reviewer-row">
+              <div class="reviewer-avatar" aria-hidden="true">MK</div>
+              <div class="reviewer-info">
+                <div class="reviewer-name">Mohammed Khalid</div>
+                <div class="reviewer-stars" aria-label="5 stars">★★★★★</div>
+                <div class="reviewer-meta">
+                  <span class="google-badge">
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/></svg>
+                    Verified Google Review
+                  </span>
+                  <span class="review-date">· May 2026</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+        <div class="reviews-footer reveal">
+          <a href="https://maps.google.com" target="_blank" rel="noopener">Read all 340+ reviews on Google →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════
+         SECTION 9 — GALLERY
+    ═══════════════════════════════════════════════ -->
+    <section class="gallery section-padding" id="gallery" aria-label="Photo gallery">
+      <div class="container">
+        <div class="section-header">
+          <p class="eyebrow">Our Gallery</p>
+          <h2 class="section-title">A Feast for the Eyes</h2>
+        </div>
+
+        <!-- Mobile 2-col grid -->
+        <div class="gallery-grid-mobile">
+          <div class="gallery-item reveal" data-index="0" tabindex="0" role="button" aria-label="View gallery image 1">
+            <img src="images/gallery-spices.jpg" alt="Colorful Indian spices arranged on dark slate" loading="lazy" />
+          </div>
+          <div class="gallery-item reveal" data-index="1" tabindex="0" role="button" aria-label="View gallery image 2">
+            <img src="images/gallery-table.jpg" alt="Elegant restaurant table setting with fine china" loading="lazy" />
+          </div>
+          <div class="gallery-item reveal" data-index="2" tabindex="0" role="button" aria-label="View gallery image 3">
+            <img src="images/dish-biryani.jpg" alt="Saffron Dum Biryani beautifully presented" loading="lazy" />
+          </div>
+          <div class="gallery-item reveal" data-index="3" tabindex="0" role="button" aria-label="View gallery image 4">
+            <img src="images/gallery-bar.jpg" alt="Restaurant bar with craft mocktails" loading="lazy" />
+          </div>
+          <div class="gallery-item reveal" data-index="4" tabindex="0" role="button" aria-label="View gallery image 5">
+            <img src="images/gallery-interior.jpg" alt="Wide-angle view of restaurant interior" loading="lazy" />
+          </div>
+          <div class="gallery-item reveal" data-index="5" tabindex="0" role="button" aria-label="View gallery image 6">
+            <img src="images/ambience-dining.jpg" alt="Warm dining room with amber pendant lights" loading="lazy" />
+          </div>
+        </div>
+
+        <!-- Desktop editorial masonry grid -->
+        <div class="gallery-grid-desktop" aria-label="Gallery grid">
+          <div class="gallery-item tall reveal" data-index="0" tabindex="0" role="button" aria-label="View gallery image 1">
+            <img src="images/gallery-spices.jpg" alt="Colorful Indian spices arranged on dark slate" loading="lazy" />
+          </div>
+          <div class="gallery-item wide reveal" data-index="4" tabindex="0" role="button" aria-label="View gallery image 2">
+            <img src="images/gallery-interior.jpg" alt="Wide-angle view of restaurant interior" loading="lazy" />
+          </div>
+          <div class="gallery-item reveal" data-index="1" tabindex="0" role="button" aria-label="View gallery image 3">
+            <img src="images/gallery-table.jpg" alt="Elegant restaurant table setting with fine china" loading="lazy" />
+          </div>
+          <div class="gallery-item reveal" data-index="2" tabindex="0" role="button" aria-label="View gallery image 4">
+            <img src="images/dish-biryani.jpg" alt="Saffron Dum Biryani beautifully presented" loading="lazy" />
+          </div>
+          <div class="gallery-item reveal" data-index="3" tabindex="0" role="button" aria-label="View gallery image 5">
+            <img src="images/gallery-bar.jpg" alt="Restaurant bar with craft mocktails" loading="lazy" />
+          </div>
+          <div class="gallery-item reveal" data-index="5" tabindex="0" role="button" aria-label="View gallery image 6">
+            <img src="images/ambience-dining.jpg" alt="Warm dining room with amber pendant lights" loading="lazy" />
+          </div>
+        </div>
+
+        <div class="gallery-footer reveal">
+          <a href="https://instagram.com/saffronandstone" target="_blank" rel="noopener">Follow us on Instagram @saffronandstone →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image lightbox">
+      <button class="lightbox-close" id="lightbox-close" aria-label="Close lightbox">×</button>
+      <button class="lightbox-prev" id="lightbox-prev" aria-label="Previous image">‹</button>
+      <div class="lightbox-img-wrap">
+        <img id="lightbox-img" src="" alt="Gallery image" />
+      </div>
+      <button class="lightbox-next" id="lightbox-next" aria-label="Next image">›</button>
+    </div>
+
+    <!-- ═══════════════════════════════════════════════
+         SECTION 10 — LOCATION
+    ═══════════════════════════════════════════════ -->
+    <section class="location-section section-padding" id="contact" aria-label="Location and contact">
+      <div class="container">
+        <div class="location-grid">
+          <div class="location-info">
+            <p class="eyebrow reveal">Find Us</p>
+            <h2 class="location-headline reveal">Saffron &amp; Stone</h2>
+
+            <div class="contact-row reveal">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <div class="contact-row-text">
+                <div class="contact-label">42, Heritage Road, Banjara Hills</div>
+                <div class="contact-sub">Hyderabad, Telangana 500034</div>
+              </div>
+            </div>
+
+            <a href="tel:+919849155566" class="contact-row reveal" style="color:inherit;">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.86 13a19.79 19.79 0 01-3.07-8.67A2 2 0 012.77 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 9.91a16 16 0 006.18 6.18l1.08-1.08a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+              <div class="contact-row-text">
+                <div class="contact-label">+91 98491 55566</div>
+                <div class="contact-sub">Tap to call directly</div>
+              </div>
+            </a>
+
+            <a href="https://wa.me/919849155566?text=Hi%2C%20I%27d%20like%20to%20know%20more%20about%20Saffron%20%26%20Stone." target="_blank" rel="noopener" class="contact-row reveal" style="color:inherit;">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+              <div class="contact-row-text">
+                <div class="contact-label">WhatsApp: +91 98491 55566</div>
+                <div class="contact-sub">Chat with us instantly</div>
+              </div>
+            </a>
+
+            <div class="contact-row reveal">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              <div class="contact-row-text">
+                <div class="contact-label">Mon – Sun: 11:00 AM – 11:00 PM</div>
+                <div class="contact-sub">Open all days including public holidays</div>
+              </div>
+            </div>
+
+            <p class="location-landmark reveal">Near Road No. 12 Junction · Banjara Hills</p>
+
+            <div class="reveal" style="margin-top: 32px;">
+              <a href="https://maps.google.com/?q=Banjara+Hills+Hyderabad+Telangana" target="_blank" rel="noopener" class="btn btn-outline-gold" style="width:100%;">Get Directions on Google Maps →</a>
+            </div>
+          </div>
+
+          <div class="location-map reveal">
+            <iframe
+              title="Saffron &amp; Stone location on Google Maps"
+              src="https://maps.google.com/maps?q=Banjara+Hills+Hyderabad+Telangana+India&output=embed"
+              loading="lazy"
+              allowfullscreen
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ═══════════════════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════════════════ -->
+  <footer class="footer" role="contentinfo">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand-name">Saffron &amp; Stone</div>
+        <p class="footer-brand-desc">Fine dining in the heart of Banjara Hills. Fourteen years of craft, warmth, and unforgettable Indian cuisine.</p>
+        <div class="footer-social" aria-label="Social media links">
+          <a href="https://instagram.com/saffronandstone" target="_blank" rel="noopener" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          </a>
+          <a href="https://facebook.com" target="_blank" rel="noopener" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+          </a>
+          <a href="https://maps.google.com" target="_blank" rel="noopener" aria-label="Google Reviews">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div>
+        <h3 class="footer-col-heading">Quick Links</h3>
+        <ul class="footer-links" role="list">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#reserve">Reserve a Table</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="footer-col-heading">Get in Touch</h3>
+        <div class="footer-contact-items">
+          <div class="footer-contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.86 13a19.79 19.79 0 01-3.07-8.67A2 2 0 012.77 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.91 9.91a16 16 0 006.18 6.18l1.08-1.08a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+            <span>+91 98491 55566</span>
+          </div>
+          <div class="footer-contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+            <span>WhatsApp: +91 98491 55566</span>
+          </div>
+          <div class="footer-contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span>42, Heritage Rd, Banjara Hills, Hyderabad</span>
+          </div>
+          <div class="footer-contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            <span>Mon–Sun · 11:00 AM – 11:00 PM</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p class="footer-bottom-text">© 2026 Saffron &amp; Stone. All rights reserved.</p>
+      <p class="footer-bottom-text">Crafted by <a href="#" rel="noopener">Antigravity</a></p>
+    </div>
+  </footer>
+
+  <!-- ═══════════════════════════════════════════════
+       FLOATING MOBILE CTA BAR
+  ═══════════════════════════════════════════════ -->
+  <div class="mobile-cta-bar" role="navigation" aria-label="Quick actions">
+    <a href="tel:+919849155566" class="mobile-cta-btn" id="mobile-call-btn" aria-label="Call us">
+      <svg viewBox="0 0 24 24" fill="none" stroke="var(--text-primary)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.86 13a19.79 19.79 0 01-3.07-8.67A2 2 0 012.77 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.91 9.91a16 16 0 006.18 6.18l1.08-1.08a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+      <span>Call</span>
+    </a>
+    <div class="mobile-cta-divider" aria-hidden="true"></div>
+    <a href="https://wa.me/919849155566?text=Hi%2C%20I%27d%20like%20to%20know%20more%20about%20Saffron%20%26%20Stone." target="_blank" rel="noopener" class="mobile-cta-btn" id="mobile-whatsapp-btn" aria-label="Message on WhatsApp">
+      <svg viewBox="0 0 24 24" fill="#25D366" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+      <span>WhatsApp</span>
+    </a>
+  </div>
+
+  <script src="main.js" defer></script>
+</body>
+</html>
