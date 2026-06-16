@@ -330,3 +330,130 @@
   window.addEventListener('scroll', updateActive, { passive: true });
   updateActive();
 })();
+
+
+/* ─────────────────────────────────────────────────────────────
+   MARQUEE CAROUSELS — Click a card to center it, then auto-resume
+   Applies to: #dishes-carousel and #reviews-carousel
+───────────────────────────────────────────────────────────── */
+(function initMarqueeCarousels() {
+  const RESUME_DELAY_MS = 3500; // ms before auto-resume after card click
+
+  // Respect reduced-motion preference — keep animation paused
+  const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (reducedMotion) {
+    document.querySelectorAll('.dishes-scroll-track, .reviews-scroll-track').forEach(track => {
+      track.style.animationPlayState = 'paused';
+    });
+  }
+
+  function bindCarousel(carouselId, cardSelector) {
+    const carousel = document.getElementById(carouselId);
+    if (!carousel) return;
+    const track = carousel.querySelector(':scope > div'); // .dishes-scroll-track / .reviews-scroll-track
+    if (!track) return;
+
+    let resumeTimer    = null;
+    let focusedCard    = null;
+    let savedTransform = ''; // stores the current CSS transform when we pause
+
+    /* ── Pause the animation, locking position in place ── */
+    function pauseAt(currentX) {
+      // Read current animated position by inspecting the computed style
+      const matrix = window.getComputedStyle(track).transform;
+      let currentTranslate = 0;
+      if (matrix && matrix !== 'none') {
+        const m = matrix.match(/matrix.*\((.+)\)/);
+        if (m) {
+          const values = m[1].split(', ');
+          currentTranslate = parseFloat(values[4]) || 0; // translateX from matrix
+        }
+      }
+      // Freeze the track: stop animation, hold position via inline transform
+      track.style.animationPlayState = 'paused';
+      track.style.transform = `translateX(${currentX !== undefined ? currentX : currentTranslate}px)`;
+      carousel.classList.add('carousel-paused');
+    }
+
+    /* ── Resume the animation ── */
+    function resume() {
+      clearTimeout(resumeTimer);
+      resumeTimer = null;
+
+      // Clear focused card highlight
+      if (focusedCard) {
+        focusedCard.classList.remove('card-focused');
+        focusedCard = null;
+      }
+
+      // Remove inline transform so the CSS animation takes over again
+      track.style.transform = '';
+      track.style.animationPlayState = '';
+      carousel.classList.remove('carousel-paused');
+    }
+
+    /* ── Smoothly pan so the clicked card is centered in the viewport ── */
+    function centerCard(card) {
+      // Get positions
+      const carouselRect = carousel.getBoundingClientRect();
+      const cardRect     = card.getBoundingClientRect();
+
+      // Current translateX applied to the track (from inline style set during pauseAt)
+      const styleTransform = track.style.transform;
+      let currentTranslate = 0;
+      if (styleTransform) {
+        const m = styleTransform.match(/translateX\(([^)]+)px\)/);
+        if (m) currentTranslate = parseFloat(m[1]);
+      }
+
+      // Where the card center is relative to carousel center
+      const cardCenterInCarousel = (cardRect.left - carouselRect.left) + cardRect.width / 2;
+      const carouselCenter       = carouselRect.width / 2;
+      const delta                = cardCenterInCarousel - carouselCenter;
+
+      // New translate = move track left by delta to bring card to center
+      const targetTranslate = currentTranslate - delta;
+      track.style.transform = `translateX(${targetTranslate}px)`;
+    }
+
+    /* ── Handle click on a card ── */
+    function handleCardClick(e) {
+      const card = e.currentTarget;
+
+      // Clear any existing resume timer
+      clearTimeout(resumeTimer);
+
+      // Remove previous focus
+      if (focusedCard && focusedCard !== card) {
+        focusedCard.classList.remove('card-focused');
+      }
+
+      // Pause the animation at current position
+      pauseAt();
+
+      // After transition settles (allow animationPlayState to apply), center this card
+      requestAnimationFrame(() => {
+        requestAnimationFrame(() => {
+          centerCard(card);
+
+          // Apply focus highlight
+          focusedCard = card;
+          card.classList.add('card-focused');
+
+          // Schedule auto-resume
+          resumeTimer = setTimeout(resume, RESUME_DELAY_MS);
+        });
+      });
+    }
+
+    // Bind click to every non-duplicate card (skip aria-hidden duplicates)
+    carousel.querySelectorAll(`${cardSelector}:not([aria-hidden])`).forEach(card => {
+      card.addEventListener('click', handleCardClick);
+    });
+  }
+
+  bindCarousel('dishes-carousel',  '.dish-card');
+  bindCarousel('reviews-carousel', '.review-card');
+})();
+
+
